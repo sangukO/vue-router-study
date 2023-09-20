@@ -1,10 +1,11 @@
 export default [
     {
         path: "/",
-        name: "HOME",
-        component: "Home",
+        name: "A",
+        component: "A",
         meta: {
             pageNumber: "1",
+            isShowFooter: true,
         },
     },
 ];

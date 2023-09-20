@@ -69,5 +69,9 @@ export const useMemberStore = defineStore("memberStore", {
             return this.list.filter((x) => x.id === this.currentMember)[0];
         },
     },
-    actions: {},
+    actions: {
+        changeMember(id) {
+            this.currentMember = id;
+        },
+    },
 });

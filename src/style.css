@@ -28,6 +28,9 @@ span {
 .lime {
     background-color: lime;
 }
+.blue {
+    background-color: blue;
+}
 
 * {
     margin: 0 auto;
@@ -82,4 +85,92 @@ footer > a {
 a {
     text-decoration: none;
     color: #000;
+}
+
+header button {
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    font-size: 100px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.subTitle {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.subPage a {
+    display: block;
+    margin-top: 170px;
+    font-size: 33px;
+}
+
+#view {
+    width: 600px;
+    border: 1px solid #000;
+}
+
+#view #btnBox {
+    display: flex;
+}
+#view #btnBox .active {
+    font-weight: 700;
+    color: #0040ff;
+}
+#view #btnBox button {
+    font-size: 20px;
+    width: 33.333%;
+    border: 1px solid #000;
+    padding: 10px 0;
+    transition: all 0.3s;
+}
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    writing-mode: horizontal-tb !important;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+#view .area > p {
+    line-height: 300px;
+    font-size: 32px;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+#view #btnBox button:hover {
+    background-color: #000;
+    color: #fff;
+}
+#view #btnBox .active:hover {
+    color: #0040ff;
+}
+h1 {
+    padding-top: 100px;
+}
+
+.nbd {
+    border: none;
 }

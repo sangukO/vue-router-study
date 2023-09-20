@@ -1,17 +1,16 @@
 <template>
-    <footer class="tc fwb">
-        <a
-            aria-current="page"
-            href="/A"
-            class="router-link-active router-link-exact-active"
-            >1</a
-        >
-        <a href="/B" class="">2</a>
-        <a href="/C" class="">3</a>
-        <a href="/D" class="">4</a>
+    <footer v-if="route.meta?.isShowFooter" class="tc fwb">
+        <router-link to="/">1</router-link>
+        <router-link :to="{ name: 'Bn', params: { id: 1 } }">2</router-link>
+        <router-link to="/C">3</router-link>
+        <router-link to="/D">4</router-link>
     </footer>
 </template>
 
-<script setup></script>
+<script setup>
+import { useRouter, useRoute } from "vue-router";
+
+const route = useRoute();
+</script>
 
 <style></style>
