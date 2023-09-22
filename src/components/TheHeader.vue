@@ -1,11 +1,13 @@
 <template>
     <header
         :class="
-            route.meta.pageNumber !== '1'
-                ? 'blue'
-                : member.currentMember === 0
-                ? 'red'
-                : 'lime'
+            route?.meta?.pageNumber
+                ? route.meta.pageNumber !== '1'
+                    ? 'blue'
+                    : member.currentMember === 0
+                    ? 'red'
+                    : 'lime'
+                : 'red'
         "
     >
         <button
@@ -16,11 +18,13 @@
             &lt;
         </button>
         {{
-            route.meta.pageNumber !== "1"
-                ? "B"
-                : member.currentMember === 0
-                ? "A"
-                : "C"
+            route?.meta?.pageNumber
+                ? route.meta.pageNumber !== "1"
+                    ? "B"
+                    : member.currentMember === 0
+                    ? "A"
+                    : "C"
+                : "A"
         }}
         <span
             v-if="route.meta.pageNumber === '1' && member.currentMember !== 0"
